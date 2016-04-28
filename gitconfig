@@ -21,6 +21,7 @@
 	sll = "!f() { for s in `git stash list --pretty=format:%gd`; do git stash show -p $s; done; };f"
 	fa = fetch --all
 	fp = fetch --prune
+	phub = push -u origin master
 	unstash = stash pop
 	ff = "!f(){ B=$(git rev-parse --abbrev-ref HEAD) && git merge --ff-only origin/$B; };f"
 	mm = merge --no-ff -
